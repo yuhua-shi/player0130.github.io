@@ -2,13 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://www.codecook.dev/bolgs/test/</loc>
-    
-    <lastmod>2018-12-27T03:20:30.342Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://www.codecook.dev/bolgs/hello-world/</loc>
     
     <lastmod>2018-12-27T03:18:40.881Z</lastmod>
