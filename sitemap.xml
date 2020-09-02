@@ -2,21 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://example.com/categories/index.html</loc>
+    <loc>https://www.codecook.dev/categories/index.html</loc>
     
     <lastmod>2020-09-02</lastmod>
     
   </url>
   
   <url>
-    <loc>http://example.com/tags/index.html</loc>
+    <loc>https://www.codecook.dev/tags/index.html</loc>
     
     <lastmod>2020-09-02</lastmod>
     
   </url>
   
   <url>
-    <loc>http://example.com/2020/09/02/hello-world/</loc>
+    <loc>https://www.codecook.dev/2020/09/02/hello-world/</loc>
     
     <lastmod>2020-09-02</lastmod>
     
@@ -24,7 +24,7 @@
   
 
   <url>
-    <loc>http://example.com/</loc>
+    <loc>https://www.codecook.dev/</loc>
     <lastmod>2020-09-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
@@ -32,7 +32,7 @@
 
   
   <url>
-    <loc>http://example.com/tags/Test/</loc>
+    <loc>https://www.codecook.dev/tags/Test/</loc>
     <lastmod>2020-09-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -41,7 +41,7 @@
 
   
   <url>
-    <loc>http://example.com/categories/Testing/</loc>
+    <loc>https://www.codecook.dev/categories/Testing/</loc>
     <lastmod>2020-09-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
