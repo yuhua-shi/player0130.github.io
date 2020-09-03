@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.codecook.dev/2020/09/03/hello-world/</loc>
+    
+    <lastmod>2020-09-03</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.codecook.dev/categories/index.html</loc>
     
     <lastmod>2020-09-03</lastmod>
@@ -10,13 +17,6 @@
   
   <url>
     <loc>https://www.codecook.dev/tags/index.html</loc>
-    
-    <lastmod>2020-09-03</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.codecook.dev/2020/09/03/hello-world/</loc>
     
     <lastmod>2020-09-03</lastmod>
     
