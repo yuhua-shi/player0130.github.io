@@ -109,3 +109,9 @@ deploy:
   type: git
   repo: https://github.com/player0130/player0130.github.io
   branch: gh-pages
+
+algolia:
+  applicationID: "WS2RV1HFRR"
+  apiKey: "875a1a6dfb312974431a1cf5e769e2ca"
+  indexName: "codecook.dev"
+  chunkSize: 5000
