@@ -30,13 +30,13 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/player0130/image/master/example.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/player0130/image/master/example-iPhone11.png">
 <meta property="article:published_time" content="2020-09-04T05:51:37.000Z">
-<meta property="article:modified_time" content="2020-09-04T17:34:10.441Z">
+<meta property="article:modified_time" content="2020-09-04T17:40:43.264Z">
 <meta property="article:author" content="Yuhua Shi">
 <meta property="article:tag" content="Node.js">
 <meta property="article:tag" content="自动化测试">
 <meta property="article:tag" content="Playwright">
-<meta property="article:tag" content="e2e">
-<meta property="article:tag" content="hands-on">
+<meta property="article:tag" content="E2E">
+<meta property="article:tag" content="Hands-on">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://raw.githubusercontent.com/player0130/image/master/example.png">
 
@@ -213,7 +213,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-09-05 02:34:10" itemprop="dateModified" datetime="2020-09-05T02:34:10+09:00">2020-09-05</time>
+                <time title="修改时间：2020-09-05 02:40:43" itemprop="dateModified" datetime="2020-09-05T02:40:43+09:00">2020-09-05</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -290,7 +290,7 @@
 <p>通过截图中可以看到我们的程序使用了 iPhone 的 UA 访问了该网站，网站识别了该 UA 并以返回了移动端页面。</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> &#123;devices&#125; = <span class="built_in">require</span>(<span class="string">&quot;playwright&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> iPhone = devices[<span class="string">&quot;iPhone 11 Pro&quot;</span>];</span><br><span class="line"></span><br><span class="line">(<span class="keyword">async</span>() =&gt; &#123;</span><br><span class="line">  ...</span><br><span class="line">  <span class="keyword">const</span> page = <span class="keyword">await</span> browser.newPage(&#123;...iPhone&#125;);</span><br><span class="line">  ...</span><br><span class="line">&#125;)();</span><br></pre></td></tr></table></figure>
 <p>在这里我们使用了 Playwright 为我们准备好的移动端 UA 来创建新的页面。Playwright 为开发者准备了一些常用的 UA(iPhone、iPad、Pixel 等等) 来方便我们快速的模拟移动端访问。具体的设备列表可以在 <a target="_blank" rel="noopener" href="https://github.com/microsoft/playwright/blob/master/src/server/deviceDescriptors.ts">这里</a> 找到。</p>
-<h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>本篇文章我们简单介绍了 Playwright 的功能以及与类似项目 Puppeteer 的关系。并通过两个简单的程序了解了Playwright的基本用法。下一篇文章将详细介绍一下Playwright的一些交互操作（Input）以及选择引擎（Selector）。</p>
+<h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>本篇文章我们简单介绍了 Playwright 的功能以及与类似项目 Puppeteer 的关系。并通过两个简单的程序了解了 Playwright 的基本用法。下一篇文章将详细介绍一下 Playwright 的一些交互操作（Input）以及选择引擎（Selector）。</p>
 
     </div>
 
@@ -321,8 +321,8 @@
               <a href="/tags/Node-js/" rel="tag"><i class="fa fa-tag"></i> Node.js</a>
               <a href="/tags/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/" rel="tag"><i class="fa fa-tag"></i> 自动化测试</a>
               <a href="/tags/Playwright/" rel="tag"><i class="fa fa-tag"></i> Playwright</a>
-              <a href="/tags/e2e/" rel="tag"><i class="fa fa-tag"></i> e2e</a>
-              <a href="/tags/hands-on/" rel="tag"><i class="fa fa-tag"></i> hands-on</a>
+              <a href="/tags/E2E/" rel="tag"><i class="fa fa-tag"></i> E2E</a>
+              <a href="/tags/Hands-on/" rel="tag"><i class="fa fa-tag"></i> Hands-on</a>
           </div>
 
         
