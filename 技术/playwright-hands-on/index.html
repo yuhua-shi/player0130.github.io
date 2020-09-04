@@ -20,28 +20,40 @@
     var CONFIG = {"hostname":"www.codecook.dev","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"appID":"WS2RV1HFRR","apiKey":"875a1a6dfb312974431a1cf5e769e2ca","indexName":"codecook.dev","hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="CodeCook">
-<meta property="og:url" content="https://www.codecook.dev/index.html">
+  <meta name="description" content="Playwright 简介Playwright 是什么？Playwright 是 Microsoft 提供的用来进行浏览器自动化测试的开源 Node.js 库。Playwright 支持多平台（Linux、Windows 以及 MacOS）以及多种浏览器内核（Chromium、Webkit 以及 Firefox）的自动化操作用以进行自动化 E2E 测试。Playwright 完全采用 TypeSc">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Playwright 上手实践">
+<meta property="og:url" content="https://www.codecook.dev/%E6%8A%80%E6%9C%AF/playwright-hands-on/index.html">
 <meta property="og:site_name" content="CodeCook">
+<meta property="og:description" content="Playwright 简介Playwright 是什么？Playwright 是 Microsoft 提供的用来进行浏览器自动化测试的开源 Node.js 库。Playwright 支持多平台（Linux、Windows 以及 MacOS）以及多种浏览器内核（Chromium、Webkit 以及 Firefox）的自动化操作用以进行自动化 E2E 测试。Playwright 完全采用 TypeSc">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://raw.githubusercontent.com/player0130/image/master/example.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/player0130/image/master/example-iPhone11.png">
+<meta property="article:published_time" content="2020-09-04T05:51:37.000Z">
+<meta property="article:modified_time" content="2020-09-04T17:32:30.034Z">
 <meta property="article:author" content="Yuhua Shi">
+<meta property="article:tag" content="Node.js">
+<meta property="article:tag" content="自动化测试">
+<meta property="article:tag" content="Playwright">
+<meta property="article:tag" content="e2e">
+<meta property="article:tag" content="hands-on">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/player0130/image/master/example.png">
 
-<link rel="canonical" href="https://www.codecook.dev/">
+<link rel="canonical" href="https://www.codecook.dev/%E6%8A%80%E6%9C%AF/playwright-hands-on/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>CodeCook</title>
+  <title>Playwright 上手实践 | CodeCook</title>
   
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131454097-1"></script>
     <script>
@@ -164,12 +176,13 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content post posts-expand">
             
-      
+
+    
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN,en,ja,default">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://www.codecook.dev/%E6%8A%80%E6%9C%AF/playwright-hands-on/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -182,10 +195,9 @@
       <meta itemprop="name" content="CodeCook">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/%E6%8A%80%E6%9C%AF/playwright-hands-on/" class="post-title-link" itemprop="url">Playwright 上手实践</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          Playwright 上手实践
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -222,6 +234,18 @@
               <span class="leancloud-visitors-count"></span>
             </span>
   
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/%E6%8A%80%E6%9C%AF/playwright-hands-on/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/%E6%8A%80%E6%9C%AF/playwright-hands-on/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
   
 
         </div>
@@ -233,7 +257,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="Playwright-简介"><a href="#Playwright-简介" class="headerlink" title="Playwright 简介"></a>Playwright 简介</h1><h2 id="Playwright-是什么？"><a href="#Playwright-是什么？" class="headerlink" title="Playwright 是什么？"></a>Playwright 是什么？</h2><p><a target="_blank" rel="noopener" href="https://github.com/microsoft/playwright">Playwright</a> 是 Microsoft 提供的用来进行浏览器自动化测试的开源 Node.js 库。Playwright 支持多平台（Linux、Windows 以及 MacOS）以及多种浏览器内核（Chromium、Webkit 以及 Firefox）的自动化操作用以进行自动化 E2E 测试。Playwright 完全采用 TypeScript 编写，拥有易用且测试友好的 API，目标云原生（CloudNative）。</p>
+        <h1 id="Playwright-简介"><a href="#Playwright-简介" class="headerlink" title="Playwright 简介"></a>Playwright 简介</h1><h2 id="Playwright-是什么？"><a href="#Playwright-是什么？" class="headerlink" title="Playwright 是什么？"></a>Playwright 是什么？</h2><p><a target="_blank" rel="noopener" href="https://github.com/microsoft/playwright">Playwright</a> 是 Microsoft 提供的用来进行浏览器自动化测试的开源 Node.js 库。Playwright 支持多平台（Linux、Windows 以及 MacOS）以及多种浏览器内核（Chromium、Webkit 以及 Firefox）的自动化操作用以进行自动化 E2E 测试。Playwright 完全采用 TypeScript 编写，拥有易用且测试友好的 API，目标云原生（CloudNative）。</p>
 <h2 id="Playwright-与-Puppeteer-是什么关系？"><a href="#Playwright-与-Puppeteer-是什么关系？" class="headerlink" title="Playwright 与 Puppeteer 是什么关系？"></a>Playwright 与 Puppeteer 是什么关系？</h2><blockquote>
 <p>Q: How does Playwright relate to Puppeteer?<br>A: Puppeteer is a Node library which provides a high-level API to control Chrome or Chromium over the DevTools Protocol. Puppeteer project is active and is maintained by Google. We are the <strong>same team</strong> that originally built Puppeteer at Google, but has since then moved on.</p>
 </blockquote>
@@ -266,27 +290,55 @@
 <p>在这里我们使用了 Playwright 为我们准备好的移动端 UA 来创建新的页面。Playwright 为开发者准备了一些常用的 UA(iPhone、iPad、Pixel 等等) 来方便我们快速的模拟移动端访问。具体的设备列表可以在 <a target="_blank" rel="noopener" href="https://github.com/microsoft/playwright/blob/master/src/server/deviceDescriptors.ts">这里</a> 找到。</p>
 <h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>本篇文章我们简单介绍了 Playwright 的功能以及与类似项目 Puppeteer 的关系。并通过两个简单的程序了解了Playwright的基本用法。下一篇文章将详细介绍一下Playwright的一些交互操作（Input）以及选择引擎（Selector）。</p>
 
-      
     </div>
 
     
     
     
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>Yuhua Shi
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://www.codecook.dev/%E6%8A%80%E6%9C%AF/playwright-hands-on/" title="Playwright 上手实践">https://www.codecook.dev/技术/playwright-hands-on/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
+          
+          <div class="post-tags">
+              <a href="/tags/Node-js/" rel="tag"><i class="fa fa-tag"></i> Node.js</a>
+              <a href="/tags/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/" rel="tag"><i class="fa fa-tag"></i> 自动化测试</a>
+              <a href="/tags/Playwright/" rel="tag"><i class="fa fa-tag"></i> Playwright</a>
+              <a href="/tags/e2e/" rel="tag"><i class="fa fa-tag"></i> e2e</a>
+              <a href="/tags/hands-on/" rel="tag"><i class="fa fa-tag"></i> hands-on</a>
+          </div>
+
+        
+
+
+        
       </footer>
+    
   </article>
   
   
   
 
 
-  
-
-
 
           </div>
           
+    <div class="comments" id="valine-comments"></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -333,6 +385,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Playwright-%E7%AE%80%E4%BB%8B"><span class="nav-number">1.</span> <span class="nav-text">Playwright 简介</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Playwright-%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="nav-number">1.1.</span> <span class="nav-text">Playwright 是什么？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Playwright-%E4%B8%8E-Puppeteer-%E6%98%AF%E4%BB%80%E4%B9%88%E5%85%B3%E7%B3%BB%EF%BC%9F"><span class="nav-number">1.2.</span> <span class="nav-text">Playwright 与 Puppeteer 是什么关系？</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AE%80%E5%8D%95%E4%B8%8A%E6%89%8B"><span class="nav-number">2.</span> <span class="nav-text">简单上手</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%85"><span class="nav-number">2.1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AE%80%E5%8D%95%E7%9A%84%E6%B5%8B%E8%AF%95%E7%A8%8B%E5%BA%8F"><span class="nav-number">2.2.</span> <span class="nav-text">简单的测试程序</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%94%A8-Webkit-%E8%AE%BF%E9%97%AE%E7%BD%91%E7%AB%99%E5%B9%B6%E6%88%AA%E5%9B%BE"><span class="nav-number">2.2.1.</span> <span class="nav-text">用 Webkit 访问网站并截图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A8%A1%E6%8B%9F%E4%B8%80%E5%8F%B0-iPhone-%E8%AE%BF%E9%97%AE%E7%BD%91%E7%AB%99"><span class="nav-number">2.2.2.</span> <span class="nav-text">模拟一台 iPhone 访问网站</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B0%8F%E7%BB%93"><span class="nav-number">2.3.</span> <span class="nav-text">小结</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 

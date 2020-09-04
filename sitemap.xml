@@ -2,9 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://www.codecook.dev/Testing/hello-world/</loc>
+    <loc>https://www.codecook.dev/%E6%8A%80%E6%9C%AF/playwright-hands-on/</loc>
     
-    <lastmod>2020-09-03</lastmod>
+    <lastmod>2020-09-04</lastmod>
     
   </url>
   
@@ -25,15 +25,43 @@
 
   <url>
     <loc>https://www.codecook.dev/</loc>
-    <lastmod>2020-09-03</lastmod>
+    <lastmod>2020-09-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
-    <loc>https://www.codecook.dev/tags/Test/</loc>
-    <lastmod>2020-09-03</lastmod>
+    <loc>https://www.codecook.dev/tags/Node-js/</loc>
+    <lastmod>2020-09-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.codecook.dev/tags/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/</loc>
+    <lastmod>2020-09-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.codecook.dev/tags/Playwright/</loc>
+    <lastmod>2020-09-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.codecook.dev/tags/e2e/</loc>
+    <lastmod>2020-09-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.codecook.dev/tags/hands-on/</loc>
+    <lastmod>2020-09-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -41,8 +69,8 @@
 
   
   <url>
-    <loc>https://www.codecook.dev/categories/Testing/</loc>
-    <lastmod>2020-09-03</lastmod>
+    <loc>https://www.codecook.dev/categories/%E6%8A%80%E6%9C%AF/</loc>
+    <lastmod>2020-09-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
